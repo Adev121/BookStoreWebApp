@@ -1,8 +1,17 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { useForm } from "react-hook-form";
 
 function Contact() {
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors },
+      } = useForm()
+    
+      const onSubmit = (data) => console.log(data)
   return (
     <>
       <Navbar />
@@ -12,7 +21,7 @@ function Contact() {
           Feel free to reach out to me with any questions, feedback, or
           inquiries you may have. I'd love to hear from you!
         </p>
-        <form className='max-w-md'>
+        <form className='max-w-md' onSubmit={handleSubmit(onSubmit)}>
           <div className='mb-4'>
             <label htmlFor='name' className='block text-gray-700 font-bold'>
               Name
@@ -23,6 +32,7 @@ function Contact() {
               name='name'
               placeholder='Your Name'
               className='form-input mt-1 block w-full border border-slate-300 rounded-md focus:border-blue-400 focus:outline-none'
+              {...register("Name", { required: true })}
             />
           </div>
           <div className='mb-4'>
@@ -35,6 +45,7 @@ function Contact() {
               name='email'
               placeholder='Your Email'
               className='form-input mt-1 block w-full border border-slate-300 rounded-md focus:border-blue-400 focus:outline-none'
+              {...register("Email", { required: true })}
             />
           </div>
           <div className='mb-4'>
@@ -50,6 +61,7 @@ function Contact() {
               placeholder='Your Message'
               rows='4'
               className='form-textarea mt-1 block w-full border border-slate-300 rounded-md focus:border-blue-400 focus:outline-none'
+              {...register("message", { required: true })}
             ></textarea>
           </div>
           <button
