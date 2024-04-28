@@ -1,0 +1,82 @@
+[
+    {
+        "id":1,
+        "name":"Story book",
+        "title":"lorem ipsume 1",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-photo/education-day-scene-fantasy-style-aesthetic_23-2151040267.jpg?t=st=1713634091~exp=1713637691~hmac=96e7f95d7a8496e5e1bebb7d62f4b61ceb66958d573d323ca227b923227edf99&w=740"
+    },
+    {
+        "id":2,
+        "name":"Sports book",
+        "title":"lorem ipsume 1",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/sporting-event-poster-template_23-2148599885.jpg?t=st=1713634146~exp=1713637746~hmac=a7655781cce42d319ab166373be144a635b66db15f034e155c321afe16b7426d&w=740"
+    },
+    {
+        "id":3,
+        "name":"Comedy book",
+        "title":"lorem ipsume 1",
+        "price": 500,
+        "category": "Comedy",
+        "image": "https://img.freepik.com/free-vector/gradient-april-fools-day-vertical-poster-template_23-2151254764.jpg?t=st=1713634317~exp=1713637917~hmac=bedceeb4250b475e2935f6446250f7e55dffd6e4b3a0322434a9d14478a84759&w=740"
+    },
+    {
+        "id":4,
+        "name":"Films book",
+        "title":"lorem ipsume 1",
+        "price": 100,
+        "category": "Films",
+        "image": "https://img.freepik.com/free-photo/man-filming-with-professional-camera_23-2149066324.jpg?t=st=1713636829~exp=1713640429~hmac=2eca27f52e4a6b68ff5c6e0f6868f72e9ea4d14cca90c430123932b349520ad8&w=1380"
+    },
+    {
+        "id":5,
+        "name":"Encyclopedia book",
+        "title":"lorem ipsume 1",
+        "price": 150,
+        "category": "Food",
+        "image": "https://img.freepik.com/free-photo/front-view-stack-books-with-one-open_23-2148827193.jpg?t=st=1713634385~exp=1713637985~hmac=3b5c23b0876a7f0f7cd1d892bc3e702a0cabe4d1b72bd5c694b5c46393da4931&w=740"
+    },
+    {
+        "id":6,
+        "name":"Horror book",
+        "title":"lorem ipsume 1",
+        "price": 150,
+        "category": "Horror",
+        "image": "https://img.freepik.com/free-photo/halloween-wallpaper-with-zombie-hand_23-2149122586.jpg?t=st=1713633887~exp=1713637487~hmac=9ee7600f325a06d01715783fac10b09ea9dd9766763dc72f2509116d77341405&w=740"
+    },
+    {
+        "id":7,
+        "name":"Devotional book",
+        "title":"lorem ipsume 2",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-photo/view-3d-islamic-quran-book_23-2151112586.jpg?t=st=1713635072~exp=1713638672~hmac=8932fba19935b676d3b89f2045ef1ce7cad2b3cbb5defdbff1322779734e3de6&w=740"
+    },
+    {
+        "id":8,
+        "name":"Aviation book",
+        "title":"lorem ipsume 2",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895691.jpg?t=st=1713635161~exp=1713638761~hmac=62a019816db901bbe78cb7d5dbc527b2199ff189e679e9b9dac90d2d24389aa8&w=1380"
+    },
+    {
+        "id":9,
+        "name":"Comics book",
+        "title":"lorem ipsume 2",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/comic-colorful-poster-template_225004-809.jpg?t=st=1713634043~exp=1713637643~hmac=2175758b180970e0fdad73952e97b992454535dd0dc1587654248caabd8ad610&w=740"
+    },
+    {
+        "id":10,
+        "name":"Animal book",
+        "title":"lorem ipsume 2",
+        "price": 0,
+        "category": "Animal",
+        "image": "https://img.freepik.com/free-vector/cute-wild-animals-cartoon-character_1308-146375.jpg?t=st=1713635318~exp=1713638918~hmac=75e382bb1e9bcae5033aea2fc57b09665ac76509e119aab2ae54655f5313169d&w=996"
+    }
+]
