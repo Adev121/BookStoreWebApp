@@ -1,8 +1,14 @@
  import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Login from "./Login";
+import { useAuth } from "../Context/Authprovider";
+import Logout from "./Logout";
+import Welcome from "./Welcome";
 
 function Navbar() {
+  const [authUser,setAuthUser]=useAuth();
+  console.log(authUser);
+  
   const [theme,setTheme]=useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light")
   const element = document.documentElement;
   useEffect(()=>{
@@ -23,7 +29,7 @@ function Navbar() {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/course">Course</Link>
+        <Link to="/courses">Course</Link>
       </li>
       <li>
         <Link to="/contact">Contact</Link>
@@ -123,12 +129,22 @@ function Navbar() {
                 </svg>
               </label>
             </div>
-            <div className="navbar-end">
-              <a className="btn text-center text-lg bg-slate-700 text-white hover:bg-pink-500" onClick={() => document.getElementById("my_modal_3").showModal()}>
-                Login
-              </a>
-              <Login/>
-            </div>
+            {
+              authUser?(
+                <div className="flex mx-4 p-0 gap-6">
+                  <Welcome/>
+                  <Logout/>
+                </div>
+              ):
+                <div className="navbar-end">
+                <a className="btn text-center text-lg bg-slate-700 text-white hover:bg-pink-500" onClick={() => document.getElementById("my_modal_3").showModal()}>
+                  Login
+                </a>
+                <Login/>
+              </div>
+              
+            }
+            
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { useForm } from "react-hook-form";
+import toast from 'react-hot-toast';
 
 function Contact() {
     const {
@@ -32,8 +33,9 @@ function Contact() {
               name='name'
               placeholder='Your Name'
               className='form-input mt-1 block w-full border border-slate-300 rounded-md focus:border-blue-400 focus:outline-none'
-              {...register("Name", { required: true })}
+              {...register("name", { required: true })}
             />
+            {errors.name && <span className="text-red-400">This field is required</span>}
           </div>
           <div className='mb-4'>
             <label htmlFor='email' className='block text-gray-700 font-bold'>
@@ -45,8 +47,9 @@ function Contact() {
               name='email'
               placeholder='Your Email'
               className='form-input mt-1 block w-full border border-slate-300 rounded-md focus:border-blue-400 focus:outline-none'
-              {...register("Email", { required: true })}
+              {...register("email", { required: true })}
             />
+            {errors.email && <span className="text-red-400">This field is required</span>}
           </div>
           <div className='mb-4'>
             <label
@@ -63,10 +66,14 @@ function Contact() {
               className='form-textarea mt-1 block w-full border border-slate-300 rounded-md focus:border-blue-400 focus:outline-none'
               {...register("message", { required: true })}
             ></textarea>
+            {errors.message && <span className="text-red-400">This field is required</span>}
           </div>
           <button
             type='submit'
-            className='bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600'
+            className='bg-blue-500 text-white font-bold my-5 py-2 px-4 rounded hover:bg-blue-600'
+            onClick={()=>{
+              toast.success("message submitted !!")
+            }}
           >
             Submit
           </button>
